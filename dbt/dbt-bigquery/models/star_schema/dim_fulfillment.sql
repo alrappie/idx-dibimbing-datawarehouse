@@ -5,6 +5,7 @@
   )
 }}
 
+-- Generate ID dengan utils
 SELECT DISTINCT 
   {{ dbt_utils.generate_surrogate_key([
         'Fulfilment', 
